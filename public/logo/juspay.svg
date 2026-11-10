@@ -1,73 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 84" width="100%" height="100%">
-  <!-- Juspay Split-Ring Emblem -->
-  <g id="juspay-emblem" transform="translate(2, 0)">
-    <!-- Left Half: Light Cyan / Sky Blue (#008CF5) -->
-    <!-- Outer arc on the left, sharp upward peak at the top center, and vertical notch at the bottom center -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <!-- Juspay Dynamic Loop Emblem (Without Wordmark) -->
+  <g id="juspay-logo">
+    <!-- Left Half: Light / Electric Sky Blue (#009BFF) -->
+    <!-- Extends as a semi-circle on the left with the bottom hook rising to y=72 and the inner aperture sweeping up to the top peak at (50, 15) -->
     <path 
-      d="M 42 2 
-         A 40 40 0 0 0 42 82 
-         L 42 71
-         C 28 66 22 55 22 42 
-         C 22 28 32 18 42 14 
+      d="M 50 2 
+         A 48 48 0 0 0 50 98 
+         L 50 72 
+         C 32 72 26 58 26 50 
+         C 26 36 34 24 50 15 
          Z" 
-      fill="#008CF5" 
+      fill="#009BFF" 
     />
 
-    <!-- Right Half: Royal / Sapphire Blue (#0066CC) -->
-    <!-- Outer arc on the right, sharp downward peak at the bottom center, and vertical notch at the top center -->
+    <!-- Right Half: Royal / Sapphire Blue (#007CEB) -->
+    <!-- Extends as a semi-circle on the right with the top hook descending to y=28 and the inner aperture sweeping down to the bottom peak at (50, 85) -->
     <path 
-      d="M 42 2 
-         A 40 40 0 0 1 42 82 
-         L 42 70 
-         C 52 66 62 56 62 42 
-         C 62 29 56 18 42 13 
-         L 42 24
-         C 49 28 53 35 53 42
-         C 53 52 47 60 42 61
+      d="M 50 2 
+         A 48 48 0 0 1 50 98 
+         L 50 85 
+         C 66 76 74 64 74 50 
+         C 74 42 68 28 50 28 
          Z" 
-      style="display:none;"
+      fill="#007CEB" 
     />
-    <path 
-      d="M 42 2 
-         A 40 40 0 0 1 42 82 
-         C 32 78 42 70 42 70
-         C 52 66 62 56 62 42 
-         C 62 29 56 18 42 13 
-         Z" 
-      style="display:none;" 
-    />
-    <!-- Clean mirrored geometry for the right half -->
-    <path 
-      d="M 42 2 
-         A 40 40 0 0 1 42 82 
-         L 42 70 
-         C 52 66 62 56 62 42 
-         C 62 29 52 18 42 24 
-         L 42 14
-         Z" 
-      style="display:none;"
-    />
-    <!-- Exact symmetrical complement with the offset notch cutout -->
-    <path 
-      d="M 42 2 
-         A 40 40 0 0 1 42 82 
-         C 32 66 42 70 42 70
-         Z" 
-      style="display:none;"
-    />
-    <path 
-      d="M 42 2 
-         A 40 40 0 0 1 42 82 
-         L 42 70 
-         C 52 66 62 56 62 42 
-         C 62 29 52 18 42 24 
-         Z" 
-      fill="#0066CC" 
-    />
-  </g>
-
-  <!-- Wordmark: JUSPAY -->
-  <g id="juspay-wordmark" fill="#6B7280" font-family="'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="44" letter-spacing="1.5">
-    <text x="96" y="58">JUSPAY</text>
   </g>
 </svg>
