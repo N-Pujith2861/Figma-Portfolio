@@ -11,71 +11,30 @@ const poppins = Poppins({
   display: "swap",
 });
 
+// TODO: replace with your real domain
+const siteUrl = "https://your-domain.com";
+
 export const metadata: Metadata = {
-  title: "Ibrahim Memon - Software Engineer & UI/UX Designer",
-  description: "A self-taught UI/UX designer and Software Engineer at WebHR. Creating meaningful and delightful digital products that balance user needs and business goals. 3+ years of industry experience.",
+  title: "Narasimha Pujith - Product Consultant & Integration Engineer",
+  description: "Product Consultant at Juspay in Bengaluru, with a Master's in Computer Applications and a background in Python, data science and machine learning. Previously an Integration Engineer at eShipz.",
   keywords: [
-    "Ibrahim Memon",
-    "Software Engineer",
-    "UI/UX Designer",
-    "Frontend Developer",
-    "React Developer",
-    "Next.js Developer",
-    "Web Designer",
-    "WebHR Engineer",
+    "Narasimha Pujith",
+    "B Reddi Sri Lakshmi Narasimha",
+    "Product Consultant",
+    "Integration Engineer",
+    "Juspay",
+    "eShipz",
+    "Python Developer",
+    "Data Science",
+    "Machine Learning",
+    "Deep Learning",
+    "Object Detection",
+    "Bengaluru",
     "Portfolio",
   ],
-  authors: [{ name: "Ibrahim Memon" }],
-  creator: "Ibrahim Memon",
-  publisher: "Ibrahim Memon",
+  authors: [{ name: "Narasimha Pujith" }],
+  creator: "Narasimha Pujith",
+  publisher: "Narasimha Pujith",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://ibiimemon.com",
-    title: "Ibrahim Memon - Software Engineer & UI/UX Designer",
-    description: "A self-taught UI/UX designer and Software Engineer at WebHR. Creating meaningful and delightful digital products.",
-    siteName: "Ibrahim Memon Portfolio",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Ibrahim Memon - Software Engineer & UI/UX Designer",
-    description: "A self-taught UI/UX designer and Software Engineer at WebHR.",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-};
-
-export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1,
-  maximumScale: 5,
-};
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en">
-      <head>
-        <link rel="canonical" href="https://ibiimemon.com" />
-      </head>
-      <body
-        className={`${poppins.variable} font-sans antialiased`}
-      >
-        {children}
-        <Analytics />
-      </body>
-    </html>
-  );
-}
