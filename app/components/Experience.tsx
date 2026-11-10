@@ -38,7 +38,7 @@ const experienceCards: ExperienceCard[] = [
     period: "Madanapalle Institute of Technology & Science · 2022 - 2023",
     description: "Master of Computer Applications, with hands-on work in data analysis, machine learning algorithms and statistical modeling.",
     icon: "/cards/card-4.png",
-    href: "https://www.linkedin.com/in/b-reddi-srilakshmi-narasimha-440075241",
+    href: "https://www.linkedin.com/in/b-reddi-srilakshmi-narasimha-440075241/",
   },
 ];
 
