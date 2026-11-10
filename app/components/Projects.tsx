@@ -11,18 +11,19 @@ interface Project {
 const featuredProjects: Project[] = [
   {
     id: 1,
-    title: "NeuraWeb – Futuristic AI Website Landing Design",
-    description: "A sleek, dark-themed AI-powered landing page concept built in Figma. Designed for modern startups and futuristic digital products, it features glowing neon visuals, immersive UI, and a dynamic tone. The design encapsulates the cutting-edge possibilities of AI and tech, offering a glimpse into the future of online experiences for tech-forward companies.",
-    link: "https://www.figma.com/community/file/1441377868897233703/ai-website-landing-design",
+    title: "Object Detection using Deep Learning Techniques",
+    description: "My MCA project at Madanapalle Institute of Technology & Science. I applied deep learning algorithms to detect objects in real time on a Raspberry Pi 4, building practical skills in Python programming and image processing along the way.",
     image: "/projects/project-1.png",
+    // link: "https://github.com/your-username/your-repo",
   },
-  {
-    id: 2,
-    title: "Apple Vision Pro – HR Software Design",
-    description: "A futuristic HR software concept designed for Apple Vision Pro, built in Figma to reimagine attendance, leave tracking, and employee experience - all in one immersive interface.",
-   link: "https://www.figma.com/community/file/1371824014208363481/apple-vision-pro-hr-software-design",
-    image: "/projects/project-2.png",
-  },
+  // Add more projects here, for example:
+  // {
+  //   id: 2,
+  //   title: "Your next project",
+  //   description: "What it does and what you built.",
+  //   image: "/projects/project-2.png",
+  //   link: "https://...",
+  // },
 ];
 
 export default function Projects(): React.JSX.Element {
@@ -31,7 +32,7 @@ export default function Projects(): React.JSX.Element {
       <div className="container mx-auto max-w-7xl">
         {featuredProjects.map((project, index) => {
           const isEven = index % 2 === 1;
-          
+
           return (
             <div key={project.id} className="mb-20 last:mb-0">
               <div className={`relative grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center ${
@@ -55,7 +56,7 @@ export default function Projects(): React.JSX.Element {
                       </p>
                     </div>
                   </div>
-                  {/* Website link */}
+                  {/* Project link */}
                   {project.link && (
                     <div className="flex gap-4">
                       <a
@@ -63,7 +64,7 @@ export default function Projects(): React.JSX.Element {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-white hover:text-purple-400 transition-colors duration-200"
-                        aria-label="Visit project website"
+                        aria-label="Visit project"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -106,4 +107,3 @@ export default function Projects(): React.JSX.Element {
     </section>
   );
 }
-
