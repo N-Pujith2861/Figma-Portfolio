@@ -38,3 +38,51 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
+    url: siteUrl,
+    title: "Narasimha Pujith - Product Consultant & Integration Engineer",
+    description: "Product Consultant at Juspay in Bengaluru. MCA graduate with a background in Python, data science and machine learning.",
+    siteName: "Narasimha Pujith Portfolio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Narasimha Pujith - Product Consultant & Integration Engineer",
+    description: "Product Consultant at Juspay in Bengaluru. MCA graduate with a background in Python and machine learning.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <head>
+        <link rel="canonical" href={siteUrl} />
+      </head>
+      <body
+        className={`${poppins.variable} font-sans antialiased`}
+      >
+        {children}
+        <Analytics />
+      </body>
+    </html>
+  );
+}
