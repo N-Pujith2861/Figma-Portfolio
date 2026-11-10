@@ -68,7 +68,7 @@ export default function Banner(): React.JSX.Element {
                   <div className="relative">
                     <p className="text-white text-lg whitespace-nowrap">
                       Hello! I Am{" "}
-                      <span className="text-purple-400">Ibrahim Memon</span>
+                      <span className="text-purple-400"> Narasimha Pujith</span>
                     </p>
                   </div>
                   <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-white/10"></div>
@@ -76,7 +76,7 @@ export default function Banner(): React.JSX.Element {
               </div>
               <Image
                 src="/assets/me.png"
-                alt="Ibrahim Memon - Software Engineer and Designer"
+                alt="Narasimha Pujith - AI Product Consultant & Integration Engineer"
                 width={300}
                 height={300}
                 className=" max-w-md absolute"
@@ -85,7 +85,7 @@ export default function Banner(): React.JSX.Element {
               />
               <Image
                 src="/assets/me-glow.png"
-                alt="Ibrahim Memon - Software Engineer and Designer"
+                alt="Narasimha Pujith - AI Product Consultant & Integration Engineer"
                 width={300}
                 height={300}
                 className="max-w-md "
@@ -108,7 +108,7 @@ export default function Banner(): React.JSX.Element {
               <div style={{ bottom: 40, position: "relative" }}>
                 <p className="text-white text-lg">
                   Hello! I Am{" "}
-                  <span className="text-purple-400">Ibrahim Memon</span>
+                  <span className="text-purple-400">Narasimha Pujith</span>
                 </p>
               </div>
               <div className="absolute -bottom-2 left-8 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-white/10"></div>
@@ -138,16 +138,14 @@ export default function Banner(): React.JSX.Element {
             <span className="animate-pulse">|</span>
           </p>
           <p className="text-lg lg:text-xl text-white/90 tracking-wide flex flex-wrap items-center justify-center lg:justify-start gap-2">
-            <span>Currently, I&apos;m a Software Engineer at</span>
+            <span>Currently I'm an AI Product Consultant at</span>
             <span className="flex items-center gap-2">
-              <Image src="/assets/webhr.webp" alt="WebHR" width={20} height={20} className="w-5 h-5" style={{ width: "auto", height: "auto" }} />
+              <Image src="https://www.google.com/search?q=juspay+logo&oq=juspay+logo&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiABDIICAIQABgWGB4yCAgDEAAYFhgeMggIBBAAGBYYHjINCAUQABiGAxiABBiKBTINCAYQABiGAxiABBiKBTINCAcQABiGAxiABBiKBTINCAgQABiGAxiABBiKBTINCAkQABiGAxiABBiKBdIBCDU0MDJqMGo0qAIOsAIB8QXzmJU-S4NHC_EF85iVPkuDRws&client=ms-android-google&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8#sv=CAMScRoyKhBlLThTMUx3YzRWVGxvN29NMg44UzFMd2M0VlRsbzdvTToOVm5vRDFCTUp6V0dLeE0gBCoxChtfaTN6eWF0LUZPZWVxaHZjUHFJall5QVVfNTQSEGUtOFMxTHdjNFZUbG83b00YADABSgQIARACGAcghsyUjAdKCBACGAEgAigB" alt="Juspay" width={20} height={20} className="w-5 h-5" style={{ width: "auto", height: "auto" }} />
               <span className="text-blue-400 font-semibold">WebHR,</span>
             </span>
           </p>
           <p className="text-lg text-white/80 max-w-2xl mt-15 mx-auto lg:mx-0">
-            A self-taught UI/UX designer, functioning in the industry for 3+
-            years now. I make meaningful and delightful digital products that
-            create an equilibrium between user needs and business goals.
+            A product consultant and integration engineer with 2+ years in the industry, backed by an MCA in Computer Science and a Python and machine learning foundation. I connect systems, data and people to build products that balance user needs and business goals.
           </p>
         </div>
       </div>
