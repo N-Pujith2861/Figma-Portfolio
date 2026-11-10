@@ -4,34 +4,41 @@ import Link from "next/link";
 interface ExperienceCard {
   id: number;
   title: string;
+  period: string;
   description: string;
   icon: string;
+  href?: string;
 }
 
 const experienceCards: ExperienceCard[] = [
   {
     id: 1,
-    title: "WebHR - HR Management App",
-    description: "WebHR automates all of your company's HR processes such as Recruitment, Onboarding, Payroll, Time & Attendance, Leaves & PTO, Performance, and much more.",
+    title: "Juspay - Product Consultant",
+    period: "July 2025 - Present · Greater Bengaluru Area",
+    description: "Working as a Product Consultant at Juspay, bringing together product thinking and technical depth to build reliable digital products.",
     icon: "/cards/card-1.png",
   },
   {
     id: 2,
-    title: "WebHR Kiosk - Time Clock Kiosk",
-    description: "WebHR Kiosk is a time clock kiosk that allows you to clock in and out of your work. It is a simple and easy to use app that allows you to clock in and out of your work.",
+    title: "eShipz - Integration Engineer",
+    period: "March 2024 - July 2025 · Bengaluru, Karnataka",
+    description: "Worked as an Integration Engineer at eShipz, connecting systems and keeping data flowing reliably between them.",
     icon: "/cards/card-2.png",
   },
   {
     id: 3,
-    title: "Somezing - AI-Powered Agents",
-    description: "Somezing is a AI-Powered Agents to Automate Your Workflows. It is a simple and easy to use app that allows you to automate your workflows.",
+    title: "Object Detection using Deep Learning",
+    period: "MCA Project",
+    description: "Applied deep learning algorithms to detect objects on a Raspberry Pi 4, building practical skills in Python programming and image processing.",
     icon: "/cards/card-3.png",
   },
   {
     id: 4,
-    title: "FileIT - File Sharing App",
-    description: "FileIT is a file sharing app that allows you to share files with your friends and family. It is a simple and easy to use app that allows you to share files with your friends and family.",
+    title: "MCA - Computer Science",
+    period: "Madanapalle Institute of Technology & Science · 2022 - 2023",
+    description: "Master of Computer Applications, with hands-on work in data analysis, machine learning algorithms and statistical modeling.",
     icon: "/cards/card-4.png",
+    href: "https://www.linkedin.com/in/b-reddi-srilakshmi-narasimha-440075241",
   },
 ];
 
@@ -40,15 +47,15 @@ export default function Experience(): React.JSX.Element {
     <section id="experience" className="py-20 px-6">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-4xl lg:text-5xl font-bold text-white mb-12 text-center">
-          Work Experience
+          Experience
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {experienceCards.map((card) => (
             <div
               key={card.id}
-              className="bg-gradient-to-r from-slate-950 via-purple-950 to-slate-950  backdrop-blur-sm rounded-xl p-6 border-t-3 border-purple-700 hover:shadow-2xl hover:shadow-purple-900 flex items-center gap-4"
+              className="bg-gradient-to-r from-slate-950 via-purple-950 to-slate-950 backdrop-blur-sm rounded-xl p-6 border-t-3 border-purple-700 hover:shadow-2xl hover:shadow-purple-900 flex items-center gap-4"
             >
-              <div className="mb-4 ">
+              <div className="mb-4">
                 <Image
                   src={card.icon}
                   alt={card.title}
@@ -58,22 +65,24 @@ export default function Experience(): React.JSX.Element {
                 />
               </div>
               <div>
-              <h3 className="text-xl font-semibold text-white mb-2">
-                {card.title}
-              </h3>
-              <p className="text-white/70 text-sm mb-4">
-                {card.description}
-              </p>
-              <Link
-                href="https://ibiimemon.com/lab"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-purple-400 hover:text-purple-300 font-medium text-sm transition-colors inline-block"
-              >
-                LEARN MORE →
-              </Link>
+                <h3 className="text-xl font-semibold text-white mb-1">
+                  {card.title}
+                </h3>
+                <p className="text-purple-300 text-xs mb-3">{card.period}</p>
+                <p className="text-white/70 text-sm mb-4">
+                  {card.description}
+                </p>
+                {card.href && (
+                  <Link
+                    href={card.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-purple-400 hover:text-purple-300 font-medium text-sm transition-colors inline-block"
+                  >
+                    LEARN MORE →
+                  </Link>
+                )}
               </div>
-
             </div>
           ))}
         </div>
@@ -81,4 +90,3 @@ export default function Experience(): React.JSX.Element {
     </section>
   );
 }
-
