@@ -75,7 +75,7 @@ export default function Experience(): React.JSX.Element {
                 {card.href && (
                   <Link
                     href={card.href}
-                    target="_blank"
+                    target="https://www.credly.com/badges/c0fe47d3-b50b-4bfa-a4be-5c8a9fedbf34/linked_in_profile"
                     rel="noopener noreferrer"
                     className="text-purple-400 hover:text-purple-300 font-medium text-sm transition-colors inline-block"
                   >
