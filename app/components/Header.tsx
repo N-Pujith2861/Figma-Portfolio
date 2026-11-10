@@ -12,13 +12,13 @@ export default function Header(): React.JSX.Element {
             className="flex items-center hover:opacity-80 transition-opacity"
           >
             <Image
-  src="/logo/logo.svg"
-  alt="Narasimha Pujith"
-  width={168}
-  height={48}
-  priority
-  className="h-12 w-auto"
-/>
+              src="/logo/logo.svg"
+              alt="Narasimha Pujith logo"
+              width={168}
+              height={48}
+              priority
+              className="h-14 w-14"
+            />
           </Link>
           <ul className="flex items-center gap-8 list-none m-0 p-0">
             <li className="m-0 p-0">
