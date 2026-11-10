@@ -17,7 +17,7 @@ export default function Header(): React.JSX.Element {
               width={168}
               height={48}
               priority
-              className="h-14 w-14"
+              className="h-14 w-auto"
             />
           </Link>
           <ul className="flex items-center gap-8 list-none m-0 p-0">
